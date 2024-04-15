@@ -25,6 +25,7 @@
             float: left;
             width: 20%;
             border-radius: 4px;
+            padding: 20px;
         }
     </style>
 </head>
@@ -46,6 +47,9 @@
         <p> <b style="color: black; font-size: 25px;">-10%</b> <b style="color: black; font-size: 25px;"> ₹35,999 </b>
             <br>M.R.P.: <del style="color: black; ">₹39,999.00</del> </p>
         <p>Inclusive of all taxes <br> <b>EMI</b> starts at ₹1,745. No Cost EMI available</p>
+
+        <input type="checkbox">
+        <label for="" >Apply ₹3000 coupon  </label><br>
         <hr>
         
 
@@ -75,11 +79,11 @@
         </table>
         <h3>Add a Protection Plan:</h3>
         <input type="checkbox">
-        <label for="" style="color: blue;">Extended Warranty by OneAssist for <mark>₹1,549.00</mark> </label><br>
+        <label for="" style="color: blue;">Extended Warranty by OneAssist <span style="color: black;">for</span> <span style="color: red;">₹1,549.00</span> </label><br>
         <input type="checkbox">
-        <label for="" style="color: blue;">Acko 1-year Screen Protection Plan for <mark>₹1,699.00</mark> </label><br>
+        <label for="" style="color: blue;">Acko 1-year Screen Protection Plan <span style="color: black;">for</span> <span style="color: red;">₹1,699.00</span> </label><br>
         <input type="checkbox">
-        <label for="" style="color: blue;">Total Protection Plan by Quess for <mark>₹1,699.00</mark> </label><br>
+        <label for="" style="color: blue;">Total Protection Plan by Quess <span style="color: black;">for</span> <span style="color: red;">₹1,699.00</span> </label><br>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuuYwnhtQ13E1eVgHP-GJSyOl-BwmPwIv7Ienj0Z5C3AfvwTgKpvWFA2_8KSWKzw3X71k&usqp=CAU"
             alt="" width="200" height="60">
         <img src="data:image/png;base64,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"
