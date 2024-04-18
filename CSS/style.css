@@ -1,5 +1,5 @@
 
-h2{
+/* h2{
     color: red;
     font-size: 30px;
     font-style: italic;
@@ -8,4 +8,65 @@ p{
     color: greenyellow;
     font-size: 20px;
     font-style:inherit;
+} */
+body
+{
+    margin: 0;
+    padding: 0;
+     background-image: url('./bgimg/img-1.jpg');
+    font-family: 'Arial';
+}
+.login{
+        width: 382px;
+        overflow: hidden;
+        margin: auto;
+        margin: 20 0 0 450px;
+        padding: 80px;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdDI1AHuab5ia8zdaTTnNoSQE1dqW0ms2r_w&s);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px ;
+
+}
+h2{
+    text-align: center;
+    background-image: url('./bgimg/img-1.jpg');
+    padding: 20px;
+}
+label{
+    color: #e3071d;
+    font-size: 17px;
+}
+#Uname{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#Pass{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+
+}
+#log{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: blue;
+
+
+}
+span{
+    color: white;
+    font-size: 17px;
+}
+a{
+    float: right;
+    background-color: grey;
 }
