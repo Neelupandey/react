@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            padding: 5px;
+            border: 2px solid blue;
+            box-shadow: 2px 2px 5px 5px rgb(100,150,128);
+        }
+     .category{
+        border: 2px solid black;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 2px 2px 5px 5px rgb(114, 114, 215);
+
+     }
+     .searchInput{
+        
+     }
+     a{
+      text-decoration:none ;
+     }
+     ul{
+        display: flex;
+     }
+     ul li{
+        text-decoration: none;
+        
+     }
+     .logo{
+        width: 100px;
+        border: 1px solid red;
+        margin-bottom: 10px;
+     }
+     .list-item{
+        margin: 10px;
+        padding: 20px;
+        border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+     }
+     #category-list{
+            padding: 5px;
+     }
+     .category-name{
+          font-size: 14px;
+          font-weight: 900;
+     }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <ul>
+                <li class="logo"><img  src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+                        alt="" height="100px" width="100px"></li>
+                <li> <input type="text" placeholder="sarch for prodcuts">
+                </li>
+                <li>
+                    <a href="">cart</a>
+                 </li>
+                 <li>
+                    <a href="">login</a>
+                 </li>
+                 <li>
+                    <a href="">Become a seller</a>
+                 </li>
+            </ul>
+
+        </div>
+        <div class="category">
+          <ul>
+            <li class="list-item"><span class="category-name">grocery</span></li>
+            <li class="list-item"><span class="category-name">Mobiles</span></li>
+            <li class="list-item"><span class="category-name">fashion</span></li>
+            <li class="list-item"><span class="category-name">travel</span></li>
+            <li class="list-item"><span class="category-name">appliances</span></li>
+          </ul>
+        </div>
+    </div>
+</body>
+
+</html>
