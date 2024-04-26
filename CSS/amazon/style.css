@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+
+}
+.navbar{
+    height: 60px;
+    background-color: #0F1111;
+    color: white;
+
+}
+nav-logo{
+    height:50px;
+    width: 10px;
+
+}
+
+.logo{
+    background-image: url("./img/logo.png");
+    height:50px;
+    width: 100px;
+    background-size: cover;
+}
+.border{
+    border: 2px solid transparent;
+}
+
+.border:hover{
+    border:1px solid white;
+}

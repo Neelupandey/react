@@ -1,3 +1,5 @@
+<!-- https://claymagicmart.com/ -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,24 +10,23 @@
     <style>
         .header{
             padding: 5px;
-            border: 2px solid blue;
+            border: 2px solid red;
             box-shadow: 2px 2px 5px 5px rgb(100,150,128);
         }
-     .category{
-        border: 2px solid black;
-        padding: 20px;
-        margin-top: 20px;
-        box-shadow: 2px 2px 5px 5px rgb(114, 114, 215);
-
-     }
+     
      .searchInput{
-        
+        width: 400px;
+        padding: 5px;
+        background-color: rgba(0,0,0,0.00);
+        border-radius: 5px;
      }
      a{
       text-decoration:none ;
      }
      ul{
+      padding: 2px;
         display: flex;
+        justify-content: space-around;
      }
      ul li{
         text-decoration: none;
@@ -36,19 +37,35 @@
         border: 1px solid red;
         margin-bottom: 10px;
      }
+
+     .category{
+        margin-top: 20px;
+        box-shadow: 2px 2px 5px 5px rgb(190, 189, 2189);
+       
+
+     }
+
+
      .list-item{
-        margin: 10px;
-        padding: 20px;
-        border: 2px solid green;
+       
         display: flex;
         flex-direction: column;
      }
      #category-list{
-            padding: 5px;
+            padding: 15px;
+            margin: 15px;
      }
      .category-name{
           font-size: 14px;
           font-weight: 900;
+     }
+
+     #category-img{
+            width: 40px;
+     }
+
+     img{
+      border: 2px solid green;
      }
     </style>
 </head>
@@ -75,12 +92,12 @@
 
         </div>
         <div class="category">
-          <ul>
-            <li class="list-item"><span class="category-name">grocery</span></li>
-            <li class="list-item"><span class="category-name">Mobiles</span></li>
-            <li class="list-item"><span class="category-name">fashion</span></li>
-            <li class="list-item"><span class="category-name">travel</span></li>
-            <li class="list-item"><span class="category-name">appliances</span></li>
+          <ul id="category-list">
+            <li class="list-item"> <img class="category-img" src="" alt=""><span class="category-name">Grocery</span></li>
+            <li class="list-item"><img class="category-img" src="" alt=""><span class="category-name">Mobiles</span></li>
+            <li class="list-item"><img class="category-img" src="" alt=""><span class="category-name">Fashion</span></li>
+            <li class="list-item"><img class="category-img" src="" alt=""><span class="category-name">Travel</span></li>
+            <li class="list-item"><img class="category-img" src="" alt=""><span class="category-name">Appliances</span></li>
           </ul>
         </div>
     </div>
