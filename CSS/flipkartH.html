@@ -2,80 +2,89 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flipkart Home Page of html</title>
-    <style>
-         body{
-            margin: 0px;
-        } 
-        .header{
-            /* padding: 5px;
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flipkart Home Page of html</title>
+  <style>
+    body {
+      margin: 0px;
+    }
+
+    .header {
+      /* padding: 5px;
             border: 2px solid red; */
-            box-shadow: 2px 2px 5px 5px rgb(100,150,128);
-        }
+      box-shadow: 2px 2px 5px 5px rgb(100, 150, 128);
+    }
 
-        .searchInputBox{
-        width: 500px;
-        padding: 5px;
-        background-color: rgba(0,0,0,0.00);
-        border-radius: 5px;
-     }
-     a{
-      text-decoration:none ;
-     }
-       
-     ul{
-       padding: 10px;
-        display: flex;
-        justify-content: space-around;
-     }
-     ul li{
-        list-style-type: none;
-        
-     }
+    .searchInputBox {
+      width: 500px;
+      padding: 5px;
+      background-color: rgba(0, 0, 0, 0.00);
+      border-radius: 5px;
+    }
 
-      .logo{
-        width: 100px;
-        /* border: 1px solid red; */
-        /* margin-bottom: 10px; */
-     }
+    a {
+      text-decoration: none;
+    }
 
-     .category{
-         /* border: 2px solid green; */
-        margin-top: 20px;
-        box-shadow: 2px 2px 5px 5px rgb(100,150,128);
-        
-        }
+    ul {
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+    }
 
-      .list-items{
-        /* border: 2px solid red; */
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-      }
-      .category-img{
-            width: 40px;
-     }
+    ul li {
+      list-style-type: none;
 
-     .category-name{
-          font-size: 14px;
-          font-weight: 900;
-     }
-     #category-list{
-            padding: 15px;
-            margin: 15px;
-     }
-    </style>
-  </head>
-  <body>
+    }
+
+    .logo {
+      width: 100px;
+      /* border: 1px solid red; */
+      /* margin-bottom: 10px; */
+    }
+
+    .category {
+      /* border: 2px solid green; */
+      margin-top: 20px;
+      box-shadow: 2px 2px 5px 5px rgb(100, 150, 128);
+
+    }
+
+    .list-items {
+      /* border: 2px solid red; */
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+    }
+
+    .category-img {
+      width: 40px;
+    }
+
+    .category-name {
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    #category-list {
+      padding: 15px;
+      margin: 15px;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div>
     <div class="header">
       <ul>
-        <li >
+        <li>
           <img class="logo"
             src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_joinplus-3a4cec.svg"
-            alt=" "
-          />
+            alt=" " />
         </li>
         <li>
           <input class="searchInputBox" type="text" placeholder="search for more product brand and more" />
@@ -92,27 +101,89 @@
       </ul>
     </div>
     <div class="category">
-        <ul id="category-list">
-            <li class="list-items"><img class="category-img" src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="">
-                <span class="categroy-name">Grocery</span></li>
-            <li class="list-items"><img class="category-img" src="https://rukminim2.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100" alt="">
-                <span class="categroy-name">Mobiles</span></li>
-            <li class="list-items"><img class="category-img" src="https://rukminim1.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100" alt="">
-                <span class="categroy-name">Electronics</span></li>
-            <li class="list-items"><img class="category-img" src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png?q=100" alt="">
-                <span class="categroy-name">Fashion</span></li>
-            <li class="list-items"><img class="category-img" src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="">
-                <span class="categroy-name">Home & Furniture</span></li>
-            <li class="list-items"><img class="category-img" src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0139228b2f7eb413.jpg?q=100" alt="">
-                <span class="categroy-name">Appliances</span></li>
-            <li class="list-items"><img class="category-img" src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="">
-                <span class="categroy-name">Travel</span></li>
-            <li class="list-items"><img class="category-img" src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="">
-                <span class="categroy-name">Beauty, Toys & more</span></li>
-            <li class="list-items"><img class="category-img" src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="">
-                <span class="categroy-name">Two Wheelers</span></li>
-          
-        </ul>
+      <ul id="category-list">
+        <li class="list-items"><img class="category-img"
+            src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="">
+          <span class="categroy-name">Grocery</span>
+        </li>
+        <li class="list-items"><img class="category-img"
+            src="https://rukminim2.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100" alt="">
+          <span class="categroy-name">Mobiles</span>
+        </li>
+        <li class="list-items"><img class="category-img"
+            src="https://rukminim1.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100" alt="">
+          <span class="categroy-name">Electronics</span>
+        </li>
+        <li class="list-items"><img class="category-img"
+            src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png?q=100" alt="">
+          <span class="categroy-name">Fashion</span>
+        </li>
+        <li class="list-items"><img class="category-img"
+            src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="">
+          <span class="categroy-name">Home & Furniture</span>
+        </li>
+        <li class="list-items"><img class="category-img"
+            src="https://rukminim2.flixcart.com/fk-p-flap/80/80/image/0139228b2f7eb413.jpg?q=100" alt="">
+          <span class="categroy-name">Appliances</span>
+        </li>
+        <li class="list-items"><img class="category-img"
+            src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="">
+          <span class="categroy-name">Travel</span>
+        </li>
+        <li class="list-items"><img class="category-img"
+            src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="">
+          <span class="categroy-name">Beauty, Toys & more</span>
+        </li>
+        <li class="list-items"><img class="category-img"
+            src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="">
+          <span class="categroy-name">Two Wheelers</span>
+        </li>
+
+      </ul>
     </div>
-  </body>
+    <div class="offer">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/f39cd50df3682fa7.jpg?q=20" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/bde6b9d6cd6c62ec.jpg?q=20" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/11cd504bbc3a1493.jpg?q=20" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="top-deals">
+      <h5>Best of Electronics</h5>
+      <div class="row">
+        <div class="card" style="width: 18rem;">
+          <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTzHfgracnkYC3At6t4Fm9dwtsaxqSesSmtjh5ekCTWtuCft1B8i4HjrdhxcM7_Ut1PAad4HsEB9LP2JKaXTD8_0E0Y7xtIJl2myZvrFqHbS4GNDaIkWPF-&usqp=CAE" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Fastrack Smartwatches</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  
+
+</body>
+
 </html>

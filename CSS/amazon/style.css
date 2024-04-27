@@ -16,10 +16,11 @@ nav-logo{
 
 }
 
-.logo{
+
+.logo {
     background-image: url("./img/logo.png");
-    height:50px;
-    width: 100px;
+    height: 54px;
+    width: 146px;
     background-size: cover;
 }
 .border{
