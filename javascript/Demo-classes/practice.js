@@ -21,16 +21,25 @@
 //     console.log(" Loss "); 
 
 
-function profit(CP,SP) {
-    if (SP == CP)
-        console.log("No profit nor Loss");
+// function profit(CP,SP) {
+//     if (SP == CP)
+//         console.log("No profit nor Loss");
 
-    else if (SP > CP)
-        console.log(" Profit ");
+//     else if (SP > CP)
+//         console.log(" Profit ");
 
-    else
-        console.log(" Loss ");
-}
-profit(2000, 5000);
-profit(1200, 1100);
-profit(2320, 2320);
+//     else
+//         console.log(" Loss ");
+// }
+// profit(2000, 5000);
+// profit(1200, 1100);
+// profit(2320, 2320);
+
+
+// function add(x,y,z) {
+//         console.log(x+y);
+// }
+// add(2000, 5000);
+
+
+

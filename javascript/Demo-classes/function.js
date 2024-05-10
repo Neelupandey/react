@@ -90,13 +90,18 @@
 
 
 // there will no error in js
-function add(num1,num2){
-    var result= num1+num2;
-    console.log(result); 
-}
-add(20,30,40,50);// extra parameters will be ignored.   O/P  50
-add("hello",1); // o/p hello1
-add(10,null);  // o/p  10
-add(10);   // o/p  NaN
-add("hello"); // O/P  helloundefined
+// function add(num1,num2){
+//     var result= num1+num2;
+//     console.log(result); 
+// }
+// add(20,30,40,50);// extra parameters will be ignored.   O/P  50
+// add("hello",1); // o/p hello1
+// add(10,null);  // o/p  10
+// add(10);   // o/p  NaN
+// add("hello"); // O/P  helloundefined
+
+// add();
+
+
+
 
