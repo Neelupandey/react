@@ -21,12 +21,22 @@
 
 
 
-function calculateTotalPrice(price,quantity){
-    var totalPrice = price * quantity;
-    return totalPrice;
+// function calculateTotalPrice(price,quantity){
+//     var totalPrice = price * quantity;
+//     return totalPrice;
+    
+// }
+// var result = calculateTotalPrice(1000,2)
+// console.log(result);
+// var finalPrice = result - 100
+// console.log(finalPrice);
 
-}
-var result = calculateTotalPrice(1000,2)
-console.log(result);
-var finalPrice = result - 100
-console.log(finalPrice);
+
+
+function myfn(f1){
+    f1();
+  }
+  myfn(function(){
+      console.log("good morning");
+  });
+
