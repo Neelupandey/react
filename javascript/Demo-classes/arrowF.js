@@ -55,11 +55,13 @@
 // var result=res(35);
 // console.log(result);
 
-
+//---------------------------------------------
 // var res= num1=> num1*num1 ;
 
 // var result=res(35);
 // console.log(result);
+
+//---------------------------------------------
 
 // var wish = ()=> console.log("good morning");
 // wish();
@@ -70,6 +72,7 @@
 // var totalPrice = calculateTotalPrice(999,2);
 // console.log(totalPrice);
 
+////------------------------------------------------------------------
 
 // var caltotalPrice= (price, quantity)=> price*quantity;
 // var res = caltotalPrice(999,2);
@@ -82,13 +85,14 @@
 //     console.log("welcome");
 // })
 
-
+//--------------------------------------------------------------------------------------
 
 
 
 function add(num1,num2,num3){
-   var res
+   var res = add(12,20,30);
+   console.log(res),
   }
- add((10,20,(res))=>{
+ add((10,20,(res))=>
       num1+num2+num3;
-  })
+  )
