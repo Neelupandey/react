@@ -1,3 +1,7 @@
+// Fat ayyow is => operator
+
+
+
 // // normal function
 
 // function wish(){
@@ -89,10 +93,14 @@
 
 
 
-function add(num1,num2,num3){
-   var res = add(12,20,30);
-   console.log(res),
+
+function add(num1,num2,print){
+//    var res = add(12,20,30);
+//    console.log(res),
+   var resul = num1+num2;
+   print (resul);
   }
- add((10,20,(res))=>
-      num1+num2+num3;
-  )
+ add(10,20,(res) => {
+    console.log(res);
+
+  })
