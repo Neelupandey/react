@@ -106,10 +106,52 @@
 // }
 
 
-const age =10;
-if(age>18){
-  console.log("he is an adult");
-}
-else{
-  console.log("he is an child");
-}  
+// const age =10;
+// if(age>18){
+//   console.log("he is an adult");
+// }
+// else{
+//   console.log("he is an child");
+// }  
+
+// let accessAllowed = false;
+// const age =20;
+// if(age>18){
+//   accessAllowed = true;
+// }else{
+//   accessAllowed = false;
+// }
+
+// let whois = age>18?'adult':'child';
+// console.log(whois)
+
+
+// let shoesize = 2;
+
+// if(shoesize==2){
+//   console.log('to small');
+// }
+// else if(shoesize==4){
+//   console.log('good');
+// }
+// else if(shoesize==5){
+//   console.log('to big');
+// }
+// else{
+//   console.log('unknown size');
+// }
+
+let shoesize = 7;
+  switch (shoesize) {
+  case 2:
+    console.log('to small');
+    break;
+  case 4:
+    console.log('good');
+    break;
+  case 5:
+    console.log('to big');
+    break;
+    default : 
+    console.log('unknown size');
+  }

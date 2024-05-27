@@ -84,16 +84,36 @@
 //-------7-----
 
 
-var num=11;
-var isprime = true;
-for(var i=2; i<num; i++){
-  if(num%i==0){
-    isprime = false;
-  }
-}
-if(isprime){
-  console.log("given no. is a prime no.");
-}else{
-  console.log("given no. is not a prime no.");
-}
+// var num=11;
+// var isprime = true;
+// for(var i=2; i<num; i++){
+//   if(num%i==0){
+//     isprime = false;
+//   }
+// }
+// if(isprime){
+//   console.log("given no. is a prime no.");
+// }else{
+//   console.log("given no. is not a prime no.");
+// }
 
+
+// let i= 1;
+// console.log("strat");
+// while (i <= 10) {
+//     console.log(i);
+//     i=i+1
+//     //i++;
+//   }
+//  console.log("end");
+
+//  for(let num=1; num<=10;num++){
+//   console.log(num);
+//  }
+
+for(let i=0; i<10;i++){
+  console.log("I", i);
+  for(let j=0; j<10;j++){
+    console.log(" I J" ,i,j);
+  }
+ }
