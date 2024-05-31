@@ -43,6 +43,7 @@
 // console.log(arr[2]) // 23
 // console.log(arr[5][0]) // 
 // console.log(arr[6]) //
+
 // 1// push()
 // // Adds one or more elements to the end of an array.
 // // array.push(el1, el2,....)
