@@ -78,7 +78,7 @@
 // console.log(deletedElement)
 
 
-//5// concat()
+// 5// concat()
 // Returns a new array combining one or more arrays.
 // array.concat(array2,arr3,arr4);
 
@@ -90,23 +90,163 @@
 // arr1 = arr1.concat(arr2, arr3);
 // console.log(arr1, arr2, arr3)
 
-//6// slice()
+// 6// slice()
 // Returns a shallow copy of a portion of an arary
 // array.slice(start-inclusive, end-exclusive)
-                //  0       1         2        3
+//                  0       1         2        3
 // const fruits = ['apple', 'orange', 'banana', 'kiwi'];
 // const citrus = fruits.slice(1,3);
 // console.log(fruits) // ['apple', 'orange', 'banana', 'kiwi']
 // console.log(citrus); // Output: ['orange', 'banana']
 
 
-//7// splice()
+// 7// splice()
 // Changes the contents of an array by removing or replacing existing elements and/or adding new elements.
 // array.splice(start, deleteCount, item1, ..., itemN)
-                //  0       1         2        3
-const fruits = ['apple', 'orange', 'banana', 'kiwi', 'anotherfruit'];
-console.log(fruits)
-// const citrus = fruits.splice(1, 1);
-const citrus = fruits.splice(1, 1, "replaceFruit1", "replacedFruit2");
-console.log(fruits)
-console.log(citrus);
+//                  0       1         2        3
+// const fruits = ['apple', 'orange', 'banana', 'kiwi', 'anotherfruit'];
+// console.log(fruits)
+// // const citrus = fruits.splice(1, 1);
+// const citrus = fruits.splice(1, 1, "replaceFruit1", "replacedFruit2");
+// console.log(fruits)
+// console.log(citrus);
+
+// indexOf()
+
+// const fruits = ['apple', 'orange', 'banana', 'apple', 'anotherfruit'];
+
+// const index = fruits.indexOf('banana');
+// const index1 = fruits.indexOf('apple');
+// const index2 = fruits.indexOf('apple',2);
+// console.log(index);
+// console.log(index1)
+// console.log(index2);
+
+// indexOf()
+// Returns the fist index at which a given element is present in the array, or -1 if not found
+// array.indexOf(searchElement, fromIndex);
+
+// let fruits = ['apple', 'organge', 'banana', 'kiwi', 'apple'];
+// const index = fruits.indexOf('apple');//0
+// const index1 = fruits.indexOf('apple', 1);//4
+// const index2 = fruits.indexOf('AnotherFruit');//-1
+
+// console.log(index, index1, index2)
+// // lastIndexOf()
+// // Returns the last index at which a given element is present in the array, or -1 if not found
+// // array.lastIndexOf(searchElement, fromIndex);
+//  fruits = ['apple', 'organge', 'banana','apple','banana', 'kiwi', 'apple'];
+// const index3 = fruits.lastIndexOf('apple');//6
+// const index4 = fruits.lastIndexOf('apple', 4);//4
+// console.log(index3, index4)
+
+// forEach()
+// Calls a function for each element in the array.
+// Syntax: `array.forEach(callback(currentValue, index, array), thisArg)`
+
+// i = 3
+// 3
+// const fruits = ['apple', 'orange', 'banana'];
+// console.log(fruits.length)
+
+// // for(let i=0; i < fruits.length; i++){
+// //     const fruit = fruits[i];
+// //     console.log(fruit)
+// // }
+
+// //   'banana'       2     
+// const mapper = function (currentValue, index){
+//     console.log(currentValue, index)
+// }
+
+// // Way - 1
+// fruits.forEach(mapper)
+
+// // Way - 2
+// fruits.forEach(function (currentValue, index){
+//     console.log(currentValue, index);
+// })
+
+// map()
+
+
+// let numbers = [1, 2, 3, 4];
+// // let multNumbers = [];
+// // for(let i=0; i < numbers.length; i++){
+// //         const num = numbers[i]*2;
+// //         multNumbers.push(num);
+       
+// //     }
+// //     console.log(numbers);
+// //     console.log(multNumbers);
+// let multNumbers1 = [];
+//     let multNumbers = numbers.map(function(currentValue,index){
+//         //console.log(currentValue,index)
+//         return currentValue*2;
+//     });
+//     console.log(numbers);
+//     console.log(multNumbers1,multNumbers);
+
+// map, filter, reduce - What is the difference between
+
+// map()
+// The map() method creates a new array by applying a function to each element of the original array.
+// array.map(callback(currentValue, index, array))
+
+// let numbers = [1, 2, 3, 4];
+// //Multiply by 2 to each array element.
+
+// // let multipliedNumbers = [];
+// // for(let i=0; i < numbers.length; i++){
+// //     const num = numbers[i]*2
+// //     multipliedNumbers.push(num)
+// // }
+// // console.log(numbers)
+// // console.log(multipliedNumbers)
+
+// let multipliedNumbers = numbers.map(function (currentValue){
+//     return currentValue*2;
+// })
+// console.log(numbers)
+// console.log(multipliedNumbers)
+
+
+// let words = ['apple', 'banana', 'orange', 'kiwi'];
+// let uppercasedWords = words.map(function (word) {
+//   return word.toUpperCase();
+// });
+// console.log(uppercasedWords); // Output: ['APPLE', 'BANANA', 'ORANGE', 'KIWI']
+
+// filter()
+// The filter() method creates a new array with elements that pass a certain condition defined by a provided function.
+// array.filter(callback(currentValue, index, array))
+
+// let numbers = [10, 20, 30, 40, 50];
+// // let filteredNumbers = [];
+// // for(let i=0; i < numbers.length; i++){
+// //     if(numbers[i] >30){
+// //         filteredNumbers.push(numbers[i])
+// //     }
+// // }
+// let filteredNumbers = numbers.filter(function (num) {
+//   return num > 30;
+// });
+//  console.log(filteredNumbers); // Output: [40, 50]
+
+// //reduce()
+// // The reduce() method reduces the array to a single value, applying a function against an accumulator and each element.
+// // `array.reduce(callback(accumulator, currentValue, index, array), initialValue)`
+
+//              0  10  30  60  => 100
+ let numbers = [10, 20, 30, 40];
+
+// // let sum =0;
+// // for(let i=0; i < numbers.length; i++){
+// //     sum = sum+numbers[i]
+// // }
+// // console.log(sum)
+let sum = numbers.reduce(function (acc, num, index) {
+    console.log("index=", index, "acc=", acc, "num=", num)
+  return acc + num;
+}, 0);
+console.log(sum)
