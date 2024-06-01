@@ -218,6 +218,19 @@
 // });
 // console.log(uppercasedWords); // Output: ['APPLE', 'BANANA', 'ORANGE', 'KIWI']
 
+// let students = [
+//   { name: 'Alice', score: 80 },
+//   { name: 'Bob', score: 90 },
+//   { name: 'Charlie', score: 75 }
+// ];
+
+// students = students.map((item, index)=>{
+//     item.srNo = index+1
+//     return item;
+// })
+
+// console.log(students)
+
 // filter()
 // The filter() method creates a new array with elements that pass a certain condition defined by a provided function.
 // array.filter(callback(currentValue, index, array))
@@ -239,15 +252,160 @@
 // // `array.reduce(callback(accumulator, currentValue, index, array), initialValue)`
 
 //              0  10  30  60  => 100
- let numbers = [10, 20, 30, 40];
+//  let numbers = [10, 20, 30, 40];
 
-// // let sum =0;
-// // for(let i=0; i < numbers.length; i++){
-// //     sum = sum+numbers[i]
-// // }
-// // console.log(sum)
-let sum = numbers.reduce(function (acc, num, index) {
-    console.log("index=", index, "acc=", acc, "num=", num)
-  return acc + num;
-}, 0);
-console.log(sum)
+// // // let sum =0;
+// // // for(let i=0; i < numbers.length; i++){
+// // //     sum = sum+numbers[i]
+// // // }
+// // // console.log(sum)
+// let sum = numbers.reduce(function (acc, num, index) {
+//     console.log("index=", index, "acc=", acc, "num=", num)
+//   return acc + num;
+// }, 0);
+// console.log(sum)
+
+
+
+//sum= 1;
+// let number = [1,2,3,4]
+// let sum = number.reduce((acc, item) =>{
+    
+//     return acc + item ;
+// },0);
+
+// console.log(sum);
+
+// let students = [
+//   { name: 'Alice', score: 80 },
+//   { name: 'Bob', score: 90 },
+//   { name: 'Charlie', score: 75 }
+// ];
+
+
+// const sum = students.reduce((acc, student)=>{
+//     return acc + student.score
+// }, 0)
+// console.log(sum)
+
+
+// const numbers = [2,4,6,8,10];
+// const allEven = numbers.every((num)=>{
+//   return num % 2 === 0
+// });
+// console.log(allEven); // o/p :- true
+
+// const allOnEven = numbers.some((num)=>{
+//   return num % 2 === 0
+// });
+// console.log(allOnEven); //o/p :- true
+
+// const atleastOneEven = numbers.some((num)=>{
+//   return num % 2 === 1
+// });
+// console.log(atleastOneEven); // O/P:- false
+
+
+// every()
+// - Tests whether all elements in the array pass the provided condition.
+// array.every(callback(element, index, array))
+
+// const numbers = [2, 4, 6, 8];
+// const allEven = numbers.every((num) => {
+//     return num % 2 === 0
+// });
+// console.log(allEven); // Output: true
+// // some()
+// // Tests whether at least one element in the array passes the provided condition.
+// // array.some(callback(element, index, array))
+
+// const atLeastOneEven = numbers.some((num) => {
+//     return num % 2 === 0
+// });
+// console.log(atLeastOneEven)
+
+// const atLeastOneOdd = numbers.some((num) => {
+//     return num % 2 === 1
+// });
+// console.log(atLeastOneOdd)
+
+// find()
+// Returns the first element in the array that satisfies the provided testing function.
+// array.find(callback(element, index, array))
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// const has3 = numbers.find((num) => {
+//     return num === 3
+// });
+// console.log(has3); // Output: 3
+
+
+// const firstEven = numbers.find((num) => {
+//     return num % 2 === 0
+// });
+// console.log(firstEven)
+// let students = [
+//   { name: 'Alice', score: 85 },
+//   { name: 'Bob', score: 95 },
+//   { name: 'Charlie', score: 80 }
+// ];
+
+// const studentWith80 = students.find((student)=>{
+//     return student.score == 80
+// })
+
+// console.log(studentWith80)
+// // findIndex()
+// // Returns the index of the first element in the array that satisfies the provided testing function, or -1 if not found.
+// // array.findIndex(callback(element, index, array))
+
+// const indexOfstudentWith80 = students.findIndex((student)=>{
+//     return student.score == 80
+// })
+
+// console.log(indexOfstudentWith80)
+
+
+
+// reverse()
+// Reverses the elements of an array in place.
+// array.reverse();
+
+// const fruits = ['apple', 'orange', 'banana'];
+// fruits.reverse();
+// console.log(fruits); // Output: ['banana', 'orange', 'apple']
+
+// // sort()
+// // array.sort(compareFunction)
+
+// fruits.sort();
+// console.log(fruits); // Output: ['apple', 'banana', 'orange']
+
+// const numbers = [1, 30, 4, 21, 100000];
+// numbers.sort((a,b)=>{
+//     return b-a
+// });
+// console.log(numbers)
+
+
+// join()
+// Joins all elements of an array into a string.
+// array.join(separator)
+
+const fruits = ['apple', 'orange', 'banana'];
+const fruitString = fruits.join('|||');
+console.log(fruitString); // Output: 'apple, orange, banana'
+
+
+const nums = [1,2,3,4,5]
+const joinedNums = nums.join('0');
+console.log(joinedNums)
+// toString()
+// Returns a string representing the array.
+
+const stringRepre = fruits.toString();
+console.log(stringRepre); // Output: 'apple, orange, banana'
+
+const stringNums = nums.toString();
+console.log(stringNums)
