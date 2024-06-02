@@ -84,11 +84,35 @@
 
 // 10. Array Modification with Push and Pop:-- Write a program to demonstrate adding and removing elements from an array using push and pop methods, then print the modified array.
 
-let arr = [1, 2, 3, 4, 5];
-arr.push(6);
-arr.push(7);
-arr.push(8);
-console.log("Array after adding an element:", arr);
-let removedElement = arr.pop();
-console.log("Array after removing an element:", arr);
-console.log("Removed element:", removedElement);
+// let arr = [1, 2, 3, 4, 5];
+// arr.push(6);
+// arr.push(7);
+// arr.push(8);
+// console.log("Array after adding an element:", arr);
+// let removedElement = arr.pop();
+// console.log("Array after removing an element:", arr);
+// console.log("Removed element:", removedElement);
+
+
+//Remove Elements with Splice: Write a program to remove the second and third elements from an array using the splice method.
+
+// let array = [1, 2, 3, 4, 5];
+// //array.splice(1, 2);
+// let deletedElement = array.splice(1,3);
+// //console.log(array);
+// console.log(deletedElement);
+
+//  Add Elements with Splice: Write a program to add two elements at the second position in an array using the splice method.
+
+let array = [1, 2, 3, 4, 5];
+let add = array.splice(1, 0, 6, 7);
+console.log(array);
+
+
+
+//Replace Elements with Splice: Write a program to replace the third element in an array with two new elements using the splice method.
+
+
+
+
+
