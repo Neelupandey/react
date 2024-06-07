@@ -2,16 +2,21 @@
 
 // function NegPost(n) {
 //     if (n > 0) {
-//         console.log("Positive number");
+//         //console.log("Positive number");
+//         return "Positive number";
 //     } else if (n < 0) {
-//         console.log("Negative number");
+//         //console.log("Negative number");
+//         return "Negative number";
 //     } else {
-//         console.log("Zero");
+//        // console.log("Zero");
+//        return "zero";
 //     }
 // }
+
 // NegPost(-21); // Negative number
 // NegPost(30); // Positive number
-// NegPost(0); // Zero
+// //NegPost(0); // Zero
+// console.log(NegPost(0));
 
 //-------------------------------------------------------------------------------------
 
@@ -37,24 +42,24 @@
 //3.Write a function to take any number as input and find the factorial of given number.
 
 
-// function factorial(n){
-//     let answer = 1;
-//     if (n == 0 || n == 1){
-//       return answer;
-//     }
-//     else if(n > 1){
-//       for(var i = n; i >= 1; i--){
-//         answer = answer * i;
-//       }
-//       return answer;
-//     }
-//     else{
-//       return "number has to be positive."
-//     }  
-//   }
-//   let n = 7;
-//   answer = factorial(n)
-//   console.log("Factorial of " + n + " : " + answer);
+function factorial(n){
+    let answer = 1;
+    if (n == 0 || n == 1){
+      return answer;
+    }
+    else if(n > 1){
+      for(var i = n; i >= 1; i--){
+        answer = answer * i;
+      }
+      return answer;
+    }
+    else{
+      return "number has to be positive."
+    }  
+  }
+  let n = 6;
+  answer = factorial(n)
+  console.log("Factorial of " + n + " : " + answer);
   
 
 //----------------------------------------------------------------------------
