@@ -177,21 +177,56 @@
 // // size
 // console.log(letters.size)
 
-const numbers = [1,2,3,2,4,3];
-const values = new Set(numbers);
-console.log(Array.from(values))
+// const numbers = [1,2,3,2,4,3];
+// const values = new Set(numbers);
+// console.log(Array.from(values))
 
 
 
-// Removes duplicate;      ----(H.W)----
-const number = [1,2,3,2,4,3];
+// // Removes duplicate;      ----(H.W)----
+// const number = [1,2,3,2,4,3];
+
+
+// const map = {
+//     "1": true,
+//     "2": true,
+//     "3": true,
+//     "4": true
+// }
+
+// // Remove duplicates from array
+
+// const number = [1,2,3,3,2,4,5,4]
+// // [1,2,3,4,5]
+
+
+// // const map = {};
+
+// const outArray = [];
+
+// for(let i=0; i< number.length; i++){
+//     const num = number[i];
+//     if(outArray.indexOf(num) === -1){
+//         outArray.push(num);
+//     }
+// }
+// Remove duplicates from array
+
+const number = [1,2,3,3,2,4,5,4]
+// [1,2,3,4,5]
 
 
 const map = {
-    "1": true,
-    "2": true,
-    "3": true,
-    "4": true
-}
+};
 
-[1,2,3,4]
+const outArray = [];
+
+for(let i=0; i< number.length; i++){
+    const num = number[i];
+    if(!map[num]){
+        outArray.push(num);
+        map[num] = true;
+        console.log(num)
+    }
+    
+}
