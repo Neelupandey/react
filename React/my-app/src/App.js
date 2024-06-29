@@ -3,6 +3,7 @@
  import './App.css';
  import { Counter } from './counter/counter';
  import { Form } from './form/form';
+ import { UserProfile } from './UserProfile/UserProfile';
 
 // function App() {
 //   return (
@@ -27,6 +28,9 @@
 // }
 
 function App(){
+  const onCallback = (count) =>{
+    console.log('Data From Child', count)
+  }
   return(
       <div className="Firstclass">
       
@@ -34,6 +38,8 @@ function App(){
 <p>This is react application.</p>
         <Counter name="Rohit" greeting="Hello" fullName="Sharma"></Counter>
         <Counter name="Virat" greeting="Hi"></Counter>
+        <Counter counterName={5} onCountChange={onCallback}></Counter>
+        <UserProfile></UserProfile>
         <Form></Form>
       </div>
    );

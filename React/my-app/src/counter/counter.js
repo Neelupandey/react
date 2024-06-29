@@ -8,4 +8,3 @@ export function Counter(props){
     </div>
 }
 
-// Props - Data passed from parent component to child component.
