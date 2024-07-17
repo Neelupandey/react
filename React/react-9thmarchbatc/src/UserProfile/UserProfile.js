@@ -14,5 +14,3 @@ export function UserProfile(user){
         <button onClick={user.onDelete}>Delete</button>
     </div>
 }
-
-// Fragment :  <></>  <Fragment></Fragment>
