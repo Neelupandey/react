@@ -41,5 +41,13 @@
 // }
 // add(2000, 5000);
 
-
+let a = 5;
+let b = 6;
+let power = 2; 
+let num = 1; 
+for (let i = 0; i < power; ++i) { 
+    num = num * a;
+    num1 = num * b; 
+}
+console.log(num, num1);
 
